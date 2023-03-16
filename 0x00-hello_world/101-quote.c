@@ -1,11 +1,16 @@
 #include <unistd.h>
 
 /**
- * main - main function
- * Return: all the time return 1
+ * main - Entry point of the program
+ *
+ * Description: Prints a message to the standard error
+ * Return: Always returns 1
  */
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(STDERR_FILENO, msg, sizeof(msg) - 1);
 	return (1);
 }
+
