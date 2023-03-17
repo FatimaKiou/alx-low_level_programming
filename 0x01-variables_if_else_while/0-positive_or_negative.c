@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * main - the main function
- *
- * Return: Always 0 (Success)
+ * main - The main function
+(*
+ * Return: 0  (success)
  */
 int main(void)
 {
